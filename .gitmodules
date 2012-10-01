@@ -1,0 +1,3 @@
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = http://github.com/altercation/solarized.git
