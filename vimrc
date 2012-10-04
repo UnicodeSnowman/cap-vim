@@ -3,7 +3,7 @@
 set nocp
 call pathogen#infect()
 
-syntax on
+syntax enable
 filetype plugin indent on
 
 " colorscheme
@@ -13,11 +13,14 @@ colorscheme solarized
 " font and text
 set guifont=Source\ Code\ Pro\ Black:h13
 
-" tabs
-set ts=4 
-set sts=4 
-set sw=4 
-set noexpandtab
+set nowrap					" don't wrap lines
+set tabstop=2				" tab = 2 spaces
+set shiftwidth=2 
+set expandtab				" use spaces, not tabs
+set number          " show line numbers 
 
-" show line numbers
-set number
+"
+"	searchin' n' shit
+"
+set hlsearch				" highlight matches
+set ignorecase				" case-insensitive
