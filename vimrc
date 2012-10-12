@@ -14,8 +14,8 @@ colorscheme solarized
 set guifont=Source\ Code\ Pro\ Black:h13
 
 set nowrap					" don't wrap lines
-set tabstop=2				" tab = 2 spaces
-set shiftwidth=2 
+set tabstop=4				" tab = 4 spaces
+set shiftwidth=4 
 set expandtab				" use spaces, not tabs
 set number          " show line numbers 
 
