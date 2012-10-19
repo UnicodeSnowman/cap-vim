@@ -36,3 +36,5 @@ inoremap { {}<Esc>:let leavechar="}"<CR>i
 inoremap [ []<Esc>:let leavechar="]"<CR>i
 
 imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
+
+inoremap <CR> <Esc>
