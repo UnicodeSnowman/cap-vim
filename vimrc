@@ -13,17 +13,21 @@ colorscheme solarized
 " font and text
 set guifont=Source\ Code\ Pro\ Black:h13
 
-set nowrap					" don't wrap lines
-set tabstop=4				" tab = 4 spaces
+set nowrap					              " don't wrap lines
+set tabstop=4				              " tab = 4 spaces
 set shiftwidth=4 
-set expandtab				" use spaces, not tabs
-set number          " show line numbers 
+set expandtab				              " use spaces, not tabs
+set number                        " show line numbers 
+set backspace=indent,eol,start    " backspace through everything in insert mode
+
+" show trailing spaces as dots
+set listchars+=trail:.            
 
 "
 "	searchin' n' shit
 "
-set hlsearch				" highlight matches
-set ignorecase				" case-insensitive
+set hlsearch				              " highlight matches
+set ignorecase				            " case-insensitive
 
 "
 " brackets and quotes
