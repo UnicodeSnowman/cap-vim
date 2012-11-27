@@ -45,4 +45,4 @@ imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 " buffer navigation
 "
 noremap <silent> [b :bprevious <CR>
-noremap <silent ]b :bnext <CR>
+noremap <silent> ]b :bnext <CR>
