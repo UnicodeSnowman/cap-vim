@@ -41,4 +41,8 @@ inoremap [ []<Esc>:let leavechar="]"<CR>i
 
 imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 
-inoremap <CR> <Esc>
+"
+" buffer navigation
+"
+noremap <silent> [b :bprevious <CR>
+noremap <silent ]b :bnext <CR>
