@@ -11,7 +11,7 @@ set background=dark
 colorscheme solarized
 
 " font and text
-set guifont=Source\ Code\ Pro\ Black:h13
+set guifont=Source\ Code\ Pro\ Black:h11
 
 set nowrap					              " don't wrap lines
 set tabstop=4				              " tab = 4 spaces
