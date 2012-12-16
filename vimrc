@@ -10,6 +10,9 @@ filetype plugin indent on
 set background=dark
 colorscheme solarized
 
+" nerdtree
+map <leader>n :execute 'NERDTreeToggle'<CR>
+
 " font and text
 set guifont=Source\ Code\ Pro\ Black:h11
 
