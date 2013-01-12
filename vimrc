@@ -35,12 +35,12 @@ set ignorecase				            " case-insensitive
 "
 " brackets and quotes
 "
-inoremap ( ()<Esc>:let leavechar=")"<CR>i
-inoremap " ""<Esc>:let leavechar="\""<CR>i
-inoremap ' ''<Esc>:let leavechar="'"<CR>i
-inoremap < <><Esc>:let leavechar=">"<CR>i
-inoremap { {}<Esc>:let leavechar="}"<CR>i
-inoremap [ []<Esc>:let leavechar="]"<CR>i
+""inoremap ( ()<Esc>:let leavechar=")"<CR>i
+""inoremap " ""<Esc>:let leavechar="\""<CR>i
+""inoremap ' ''<Esc>:let leavechar="'"<CR>i
+""inoremap < <><Esc>:let leavechar=">"<CR>i
+""inoremap { {}<Esc>:let leavechar="}"<CR>i
+""inoremap [ []<Esc>:let leavechar="]"<CR>i
 
 imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 
