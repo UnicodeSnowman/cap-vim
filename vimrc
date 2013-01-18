@@ -6,9 +6,6 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
-" colorscheme
-set background=dark
-colorscheme solarized
 
 " nerdtree
 map <leader>n :execute 'NERDTreeToggle'<CR>
@@ -35,14 +32,38 @@ set ignorecase				            " case-insensitive
 "
 " brackets and quotes
 "
-""inoremap ( ()<Esc>:let leavechar=")"<CR>i
-""inoremap " ""<Esc>:let leavechar="\""<CR>i
-""inoremap ' ''<Esc>:let leavechar="'"<CR>i
-""inoremap < <><Esc>:let leavechar=">"<CR>i
-""inoremap { {}<Esc>:let leavechar="}"<CR>i
-""inoremap [ []<Esc>:let leavechar="]"<CR>i
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
 
-imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
+
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [[     [
+inoremap []     []
+
+inoremap "      ""<Left>
+inoremap "<CR>  "<CR>"<Esc>O
+inoremap ""     "
+inoremap ""     ""
+
+inoremap '      ''<Left>
+inoremap '<CR>  '<CR>'<Esc>O
+inoremap ''     '
+inoremap ''     ''
+
+inoremap <      <><Left>
+inoremap <<CR>  <<CR>><Esc>O
+inoremap <<     >
+inoremap <>     <>
+
+"imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
+imap <C-j> <Esc>:exec <Esc>wa
 
 "
 " buffer navigation
