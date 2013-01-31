@@ -11,7 +11,7 @@ filetype plugin indent on
 map <leader>n :execute 'NERDTreeToggle'<CR>
 
 " font and text
-set guifont=Source\ Code\ Pro\ Black:h11
+set guifont=Source\ Code\ Pro\ Light:h14
 
 set nowrap					              " don't wrap lines
 set tabstop=4				              " tab = 4 spaces
@@ -59,7 +59,7 @@ inoremap ''     ''
 
 inoremap <      <><Left>
 inoremap <<CR>  <<CR>><Esc>O
-inoremap <<     >
+inoremap <<     <
 inoremap <>     <>
 
 "imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
