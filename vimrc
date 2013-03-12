@@ -17,8 +17,8 @@ set nowrap					              " don't wrap lines
 set tabstop=4				              " tab = 4 spaces
 set shiftwidth=4 
 set expandtab				              " use spaces, not tabs
-set number                        " show line numbers 
-set backspace=indent,eol,start    " backspace through everything in insert mode
+set number                                " show line numbers 
+set backspace=indent,eol,start            " backspace through everything in insert mode
 
 " show trailing spaces as dots
 set listchars+=trail:.            
@@ -27,7 +27,7 @@ set listchars+=trail:.
 "	searchin' n' shit
 "
 set hlsearch				              " highlight matches
-set ignorecase				            " case-insensitive
+set ignorecase				              " case-insensitive
 
 "
 " brackets and quotes
