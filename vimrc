@@ -20,6 +20,10 @@ set expandtab				              " use spaces, not tabs
 set number                                " show line numbers 
 set backspace=indent,eol,start            " backspace through everything in insert mode
 
+" js indent within html templates
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
 " show trailing spaces as dots
 set listchars+=trail:.            
 
