@@ -31,7 +31,8 @@ set listchars+=trail:.
 "	searchin' n' shit
 "
 set hlsearch				              " highlight matches
-set ignorecase				              " case-insensitive
+set smartcase				              " case-sensitive if capital letters are included
+                                          " in the search pattern
 
 "
 " brackets and quotes
