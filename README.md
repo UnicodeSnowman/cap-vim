@@ -1,6 +1,6 @@
 Installation:
 
-    git clone git://github.com/UnicodeSnowman/capVim.git ~/.vim
+    git clone git://github.com/UnicodeSnowman/cap-vim.git ~/.vim
 
 Create symlinks:
 
