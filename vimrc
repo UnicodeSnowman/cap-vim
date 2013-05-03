@@ -6,6 +6,8 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
+" ctrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " nerdtree
 map <leader>n :execute 'NERDTreeToggle'<CR>
