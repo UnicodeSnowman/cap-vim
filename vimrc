@@ -9,6 +9,9 @@ filetype plugin indent on
 " ctrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+" disable syntastic html for now becuase it's annoying
+let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
+
 " nerdtree
 map <leader>n :execute 'NERDTreeToggle'<CR>
 
@@ -21,6 +24,9 @@ set shiftwidth=4
 set expandtab				              " use spaces, not tabs
 set number                                " show line numbers 
 set backspace=indent,eol,start            " backspace through everything in insert mode
+
+" folding
+set foldcolumn=1 " the number of columns to use for folding display at the left
 
 " js indent within html templates
 let g:html_indent_script1 = "inc"
