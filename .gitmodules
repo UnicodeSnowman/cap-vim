@@ -43,3 +43,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-colors-hybrid"]
+	path = bundle/vim-colors-hybrid
+	url = git://github.com/w0ng/vim-hybrid.git

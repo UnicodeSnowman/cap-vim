@@ -2,4 +2,5 @@
 
 " colorscheme
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme hybrid
