@@ -46,3 +46,15 @@
 [submodule "bundle/vim-colors-hybrid"]
 	path = bundle/vim-colors-hybrid
 	url = git://github.com/w0ng/vim-hybrid.git
+[submodule "bundle/tlib-vim"]
+	path = bundle/tlib-vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/ervandew/snipmate.vim.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
