@@ -6,6 +6,11 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
+" snipmate 
+"let g:snipMate = {}
+"let g:snipMate.scope_aliases = {}
+"let g.snipMate.scope_aliases['javascript'] = 'javascript,angular'
+
 " ctrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 

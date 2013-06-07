@@ -1,5 +1,63 @@
+### angularJS
 # controller
-snippet cont
-	${1:/* module name */}.controller(function($scope, ${2}) {
-		
+snippet ngcont
+	${1:/* module name */}.controller(['$scope'${2}, function($scope, ${3}) {
+		${4}	
+	}]);
+
+# factory
+snippet ngfact
+	${1:/* module name */}.factory(['${2:/* dependency */}', function(${3}) {
+		${4}	
+	}]);
+
+# directive
+snippet ngdir
+	${1:/* module name */}.directive(function(${2}) {
+		return {
+			restrict: '${3}',
+			templateUrl: '${4}',
+			link: function (scope, element, attrs) {
+				${5}
+			}
+		}
 	});
+
+# module
+snippet ngmod
+	angular.module('${1: /* module name */}', [])${2: /* mas? */}
+
+# config routes
+snippet ngroutep
+	config(['$routeProvider', function($routeProvider) {
+		
+		$routeProvider.
+			when('${1:/* url */}', { templateUrl: '${2:/* path */}'})${3:/* mas? */}
+	}]);
+
+snippet ngroute
+	when('${1:/* url */}', { templateUrl: '${2:/* path */}'})${3:/* mas? */}
+
+
+### javascript 
+snippet f
+	function(${1}) {
+		${2}
+	}
+
+snippet proto
+	prototype.${1:/* fn name */} = function(${2}) {
+		${3}
+	}
+
+snippet if
+	if(${1:/* condition */}) {
+		${2: /* do something */}
+	}
+
+snippet ife
+	if(${1:/* condition */}) {
+		${2: /* do something */}
+	} else {
+		${3: /* do something else */}
+	}
