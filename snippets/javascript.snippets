@@ -1,24 +1,24 @@
 ### angularJS
 # controller
 snippet ngcont
-	${1:/* module name */}.controller(['$scope'${2}, function($scope, ${3}) {
-		${4}	
+	${1:/* module name */}.controller(${2:/* controller name */}['$scope'${3}, function($scope, ${4}) {
+		${5}	
 	}]);
 
 # factory
 snippet ngfact
-	${1:/* module name */}.factory(['${2:/* dependency */}', function(${3}) {
-		${4}	
+	${1:/* module name */}.factory(${2:/* factory name */}, ['${3:/* dependency */}', function(${4}) {
+		${5}	
 	}]);
 
 # directive
 snippet ngdir
-	${1:/* module name */}.directive(function(${2}) {
+	${1:/* module name */}.directive(${2:/* directive name */}, function(${3}) {
 		return {
-			restrict: '${3}',
-			templateUrl: '${4}',
+			restrict: '${4}',
+			templateUrl: '${5}',
 			link: function (scope, element, attrs) {
-				${5}
+				${6}
 			}
 		}
 	});
