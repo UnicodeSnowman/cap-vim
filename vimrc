@@ -6,6 +6,9 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
+" color and syntax highlighting
+colorscheme hybrid
+
 " snipmate 
 "let g:snipMate = {}
 "let g:snipMate.scope_aliases = {}
