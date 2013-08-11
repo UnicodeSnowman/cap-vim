@@ -85,20 +85,6 @@ inoremap <>     <>
 "imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 imap <C-j> <Esc>:exec <Esc>wa
 
-" tab mapping
-"function! TabComplete()
-"    let line = getline('.')     " current line
-"    let substr = strpart(line, -1, col('.')+1)  " from the start of the current line to one additional character
-"    if (strlen(substr)==0)
-"        return "\<tab>"
-"    else
-"        return "<C-x><C-o>"
-"    endif
-"endfunction
-"
-"
-"inoremap <tab> <c-r>=TabComplete()<CR>
-
 " mapping control-space to auto-complete for now at least.
 " this actually seems awesome, because using control-space
 " doesn't break snipmate navigation to different fields
