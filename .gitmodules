@@ -61,3 +61,6 @@
 [submodule "bundle/vim-tern"]
 	path = bundle/vim-tern
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
