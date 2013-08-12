@@ -1,9 +1,10 @@
 " capVim - .vimrc
 
 set nocp
+set nocompatible
 call pathogen#infect()
 
-syntax enable
+syntax on
 filetype plugin indent on
 
 " color and syntax highlighting
