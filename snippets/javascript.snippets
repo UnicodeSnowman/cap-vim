@@ -62,6 +62,7 @@ snippet ife
 		${3: /* do something else */}
 	}
 
+### jasmine
 snippet describe
 	describe('${1: /* something */}', function () {
 		${2: /* ??? */}
@@ -70,4 +71,8 @@ snippet describe
 snippet it
 	it('should ${1: /* does things /*}', function () {
 		${2: /* ??? */}
+	});
+snippet nginject
+	inject(function($injector) {
+		${1} = $injector.get('${2}');
 	});
