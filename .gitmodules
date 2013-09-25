@@ -67,3 +67,6 @@
 [submodule "bundle/play2vim"]
 	path = bundle/play2vim
 	url = https://github.com/gre/play2vim.git
+[submodule "bundle/vim-emmet"]
+	path = bundle/vim-emmet
+	url = git@github.com:mattn/emmet-vim.git
