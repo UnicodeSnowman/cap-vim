@@ -76,3 +76,7 @@ snippet nginject
 	inject(function($injector) {
 		${1} = $injector.get('${2}');
 	});
+snippet beforeEach
+	beforeEach(function (${1}) {
+		${2}
+	});
