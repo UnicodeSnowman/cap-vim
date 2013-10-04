@@ -41,8 +41,12 @@ snippet ngroute
 
 ### javascript 
 snippet f
-	function(${1}) {
+	function (${1}) {
 		${2}
+	}
+snippet func
+	function ${1} (${2}) {
+		${3}
 	}
 #
 snippet proto
@@ -51,12 +55,12 @@ snippet proto
 	}
 
 snippet if
-	if(${1:/* condition */}) {
+	if (${1:/* condition */}) {
 		${2: /* do something */}
 	}
 
 snippet ife
-	if(${1:/* condition */}) {
+	if (${1:/* condition */}) {
 		${2: /* do something */}
 	} else {
 		${3: /* do something else */}
