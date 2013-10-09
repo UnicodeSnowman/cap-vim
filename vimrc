@@ -96,3 +96,8 @@ inoremap <C-space> <C-x><C-o>
 "
 noremap <silent> [b :bprevious <CR>
 noremap <silent> ]b :bnext <CR>
+
+"
+" commands
+"
+:command Snowman :normal i<C-v>u2603
