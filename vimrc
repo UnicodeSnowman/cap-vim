@@ -101,3 +101,4 @@ noremap <silent> ]b :bnext <CR>
 " commands
 "
 :command Snowman :normal i<C-v>u2603
+:command Backtick :normal i`
