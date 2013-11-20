@@ -102,3 +102,5 @@ noremap <silent> ]b :bnext <CR>
 "
 :command Snowman :normal i<C-v>u2603
 :command Backtick :normal i`
+:command Tableflip :normal i(╯°□°)╯︵ ┻━┻
+:command Tableback :normal i┬┬ ノ( ゜-゜ノ)
