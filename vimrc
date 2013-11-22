@@ -102,5 +102,7 @@ noremap <silent> ]b :bnext <CR>
 "
 :command Snowman :normal i<C-v>u2603
 :command Backtick :normal i`
-:command Tableflip :normal i(╯°□°)╯︵ ┻━┻
-:command Tableback :normal i┬┬ ノ( ゜-゜ノ)
+":command Tableflip :normal i(╯°□°)╯︵ ┻━┻
+":command Tableback :normal i┬┬ ノ( ゜-゜ノ)
+:command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
+:command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
