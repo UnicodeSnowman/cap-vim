@@ -33,6 +33,8 @@ set shiftwidth=4
 set expandtab				              " use spaces, not tabs
 set number                                " show line numbers 
 set backspace=indent,eol,start            " backspace through everything in insert mode
+set listchars=tab:>~,nbsp:_,trail:.
+set list
 
 " folding
 set foldcolumn=1 " the number of columns to use for folding display at the left
