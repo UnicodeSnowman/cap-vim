@@ -24,6 +24,9 @@ let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_f
 " nerdtree
 map <leader>n :execute 'NERDTreeToggle'<CR>
 
+" ctags
+set tags=tags;/
+
 " font and text
 set guifont=Source\ Code\ Pro\ Light:h14
 
