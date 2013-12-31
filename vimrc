@@ -10,6 +10,9 @@ filetype plugin indent on
 " color and syntax highlighting
 colorscheme hybrid
 
+" line numbers
+" set highlight LineNr guifg=#050505
+
 " snipmate 
 "let g:snipMate = {}
 "let g:snipMate.scope_aliases = {}
