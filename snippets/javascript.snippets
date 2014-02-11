@@ -80,6 +80,27 @@ snippet nginject
 	inject (function($injector) {
 		${1} = $injector.get('${2}');
 	});
+snippet ngspec:controller
+	describe('${1}', function () {
+		var $scope,
+			$rootScope,
+			$controller,
+			controller;
+
+		beforeEach(function () {
+			module(${2});
+			
+			inject(function (_$rootScope_, _$controller_, $injector) {
+				$rootScope = _$rootScope_;
+				$scope = $rootScope.$new();
+				$controller = _$controller_;
+			});
+
+			controller = $controller('${3}', { $scope: $scope });
+		});
+
+		${4}
+	});
 snippet beforeEach
 	beforeEach (function (${1}) {
 		${2}
