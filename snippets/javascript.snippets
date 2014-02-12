@@ -101,6 +101,25 @@ snippet ngspec:controller
 
 		${4}
 	});
+snippet ngspec:service
+	describe('${1}', function () {
+		var $rootScope,
+			$injector,
+			service;
+
+		beforeEach(function () {
+			module(${2});
+			
+			inject(function (_$rootScope_, _$injector_) {
+				$rootScope = _$rootScope_;
+				$injector = _$injector_;
+			});
+
+			service = $injector.get('${3}')
+		});
+
+		${4}
+	});
 snippet beforeEach
 	beforeEach (function (${1}) {
 		${2}
