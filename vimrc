@@ -7,6 +7,9 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" meeses
+set mouse=a
+
 " color and syntax highlighting
 colorscheme hybrid
 
