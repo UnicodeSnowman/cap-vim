@@ -28,7 +28,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 
 " nerdtree
-map <leader>n :execute 'NERDTreeToggle'<CR>
+"map <leader>n :execute 'NERDTreeToggle'<CR>
+map <leader>e :Explore<CR>
 
 " ctags
 set tags=./tags,tags
