@@ -13,6 +13,9 @@ set mouse=a
 " color and syntax highlighting
 colorscheme hybrid
 
+" highlight json as javascript
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " line numbers
 " set highlight LineNr guifg=#050505
 
