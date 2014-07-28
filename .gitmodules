@@ -76,6 +76,6 @@
 [submodule "bundle/splitjoin"]
 	path = bundle/splitjoin
 	url = git://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "elm.vim"]
+[submodule "bundle/vim-elm"]
 	path = bundle/vim-elm
 	url = git@github.com:lambdatoast/elm.vim.git
