@@ -100,8 +100,8 @@ inoremap <<CR>  <<CR>><Esc>O
 inoremap <<     <
 inoremap <>     <>
 
-"imap <C-j> <Esc>:exec "normal f" . leavechar<CR>a
 imap <C-j> <Esc>:exec <Esc>wa
+imap <C-l> <Esc>:exec <Esc>A
 
 " mapping control-space to auto-complete for now at least.
 " this actually seems awesome, because using control-space
