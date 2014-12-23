@@ -32,7 +32,8 @@ let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_f
 
 " nerdtree
 "map <leader>n :execute 'NERDTreeToggle'<CR>
-map <leader>e :Explore<CR>
+map <leader>e :Explore<CR>:set number<CR>
+nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
 
 " ctags
 set tags=./tags,tags
