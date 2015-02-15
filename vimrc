@@ -16,6 +16,9 @@ colorscheme hybrid
 " highlight json as javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" clipboard : https://coderwall.com/p/j9wnfw/vim-tmux-system-clipboard
+set clipboard=unnamed
+
 " line numbers
 " set highlight LineNr guifg=#050505
 
@@ -29,6 +32,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " disable syntastic html for now becuase it's annoying
 let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
+let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
 
 " nerdtree
 "map <leader>n :execute 'NERDTreeToggle'<CR>
