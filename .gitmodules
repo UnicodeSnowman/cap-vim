@@ -1,15 +1,15 @@
 [submodule "vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = http://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = http://github.com/msanders/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
-	url = http://github.com/pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -66,19 +66,19 @@
 	url = https://github.com/gre/play2vim.git
 [submodule "bundle/vim-emmet"]
 	path = bundle/vim-emmet
-	url = https:github.com/mattn/emmet-vim.git
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = https:github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-rust"]
 	path = bundle/vim-rust
-	url = https:github.com/wting/rust.vim.git
+	url = https://github.com/wting/rust.vim.git
 [submodule "bundle/splitjoin"]
 	path = bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
 [submodule "bundle/vim-elm"]
 	path = bundle/vim-elm
-	url = https:github.com/lambdatoast/elm.vim.git
+	url = https://github.com/lambdatoast/elm.vim.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
