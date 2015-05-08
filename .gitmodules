@@ -88,3 +88,6 @@
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = git@github.com:guns/vim-clojure-static.git
+[submodule "bundle/rust-racer.vim"]
+	path = bundle/rust-racer.vim
+	url = git@github.com:phildawes/racer.git

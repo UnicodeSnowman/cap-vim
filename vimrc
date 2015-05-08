@@ -22,23 +22,6 @@ set clipboard=unnamed
 " line numbers
 " set highlight LineNr guifg=#050505
 
-" snipmate 
-"let g:snipMate = {}
-"let g:snipMate.scope_aliases = {}
-"let g.snipMate.scope_aliases['javascript'] = 'javascript,angular'
-
-" ctrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" disable syntastic html for now becuase it's annoying
-let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
-let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
-
-" nerdtree
-"map <leader>n :execute 'NERDTreeToggle'<CR>
-map <leader>e :Explore<CR>:set number<CR>
-nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
-
 " ctags
 set tags=./tags,tags
 
@@ -72,7 +55,6 @@ set listchars+=trail:.
 set hlsearch				              " highlight matches
 set ignorecase
 set smartcase				              " case-sensitive if capital letters are included
-                                          " in the search pattern
 
 "
 " brackets and quotes
@@ -128,3 +110,23 @@ noremap <silent> ]b :bnext <CR>
 ":command Tableback :normal i┬┬ ノ( ゜-゜ノ)
 :command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
 :command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
+
+""""""""""" Plugin-related Settings
+" ctrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" disable syntastic html for now becuase it's annoying
+let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
+let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
+
+" nerdtree
+"map <leader>n :execute 'NERDTreeToggle'<CR>
+map <leader>e :Explore<CR>:set number<CR>
+nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
+
+" racer (rust)
+set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you need to save the current buffer every time you do a goto-definition"
+let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
+let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
+
+"""""""""""
