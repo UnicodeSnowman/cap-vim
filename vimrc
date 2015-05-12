@@ -35,6 +35,9 @@ set expandtab				              " use spaces, not tabs
 set number                                " show line numbers 
 set backspace=indent,eol,start            " backspace through everything in insert mode
 
+" copy pasta
+set paste                                 " don't mangle paste formatting
+
 " set whitespace character representation
 set listchars=tab:>~,nbsp:_,trail:.
 set list
