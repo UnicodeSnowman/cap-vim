@@ -36,7 +36,8 @@ set number                                " show line numbers
 set backspace=indent,eol,start            " backspace through everything in insert mode
 
 " copy pasta
-set paste                                 " don't mangle paste formatting
+" (we don't always want this, but leaving it here because it's a useful command to toggle ON/OFF)
+" set paste                                 " don't mangle paste formatting
 
 " set whitespace character representation
 set listchars=tab:>~,nbsp:_,trail:.
