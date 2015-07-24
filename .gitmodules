@@ -91,3 +91,6 @@
 [submodule "bundle/rust-racer.vim"]
 	path = bundle/rust-racer.vim
 	url = git@github.com:phildawes/racer.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
