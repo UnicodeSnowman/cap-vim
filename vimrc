@@ -115,6 +115,9 @@ noremap <silent> ]b :bnext <CR>
 :command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
 :command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
 
+" reverse some text
+vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
+
 """"""""""" Plugin-related Settings
 " ctrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -131,6 +134,7 @@ nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
 " racer (rust)
 set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you need to save the current buffer every time you do a goto-definition"
 let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
+"let g:racer_experimental_completer = 1
 let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
 
 """""""""""
