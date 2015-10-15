@@ -12,7 +12,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
     cd ~/.vim
     git submodule init
     git submodule update
-    
+
 To add additional submodules to repo, run:
 
     git submodule add http://github.com/[user]/[repo-name].git bundle/[repo-name-of-choice]
+
+To a update all submodules, run:
+
+    git submodule foreach git pull --rebase origin master

@@ -1,68 +1,58 @@
 " capVim - .vimrc
 
-set nocp
-set nocompatible
+" PLUGIN LOADING
 call pathogen#infect()
 
-syntax on
-filetype plugin indent on
-
-" meeses
+" MOUSE SETTINGS
 set mouse=a
 
-" color and syntax highlighting
-colorscheme hybrid
+" MISCELLANEOUS
+set nocompatible
+syntax on
+filetype plugin indent on                                   " load filetype specific files
+set lazyredraw                                              " redraw only when necessary
+autocmd BufNewFile,BufRead *.json set ft=javascript         " highlight json as javascript
+set clipboard=unnamed                                       " clipboard : https://coderwall.com/p/j9wnfw/vim-tmux-system-clipboard
+set number                                                  " show line numbers 
 
-" highlight json as javascript
-autocmd BufNewFile,BufRead *.json set ft=javascript
-
-" clipboard : https://coderwall.com/p/j9wnfw/vim-tmux-system-clipboard
-set clipboard=unnamed
-
-" line numbers
-" set highlight LineNr guifg=#050505
-
-" ctags
+" CTAGS
 set tags=./tags,tags
 
-" font and text
+" FONT, TEXT, COLORS
 set guifont=Source\ Code\ Pro\ Light:h14
+colorscheme hybrid                                          " color and syntax highlighting
+" set highlight LineNr guifg=#050505                        " highlight line numbers
 
-set nowrap					              " don't wrap lines
-set tabstop=4				              " tab = 4 spaces
+" HIGHLIGHTING
+set cursorline                                              " highlight current line
+set showmatch                                               " highlight matching opening/closing characters
+
+" SPACES AND TABS
+set nowrap                                                  " don't wrap lines
+set tabstop=4                                               " tab = 4 spaces
 set shiftwidth=4 
-set expandtab				              " use spaces, not tabs
-set number                                " show line numbers 
-set backspace=indent,eol,start            " backspace through everything in insert mode
+set expandtab                                               " use spaces, not tabs
+set backspace=indent,eol,start                              " backspace through everything in insert mode
 
-" copy pasta
-" (we don't always want this, but leaving it here because it's a useful command to toggle ON/OFF)
-" set paste                                 " don't mangle paste formatting
+" WHITESPACE
+set list                                                    " display whitespace characters
+set listchars=tab:>~,nbsp:_,trail:.                         " set whitespace character representation
 
-" set whitespace character representation
-set listchars=tab:>~,nbsp:_,trail:.
-set list
-
-" folding
-set foldcolumn=1 " the number of columns to use for folding display at the left
+" FOLDING
+set foldcolumn=1                                            " the number of columns to use for folding display at the left
 
 " js indent within html templates
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-" show trailing spaces as dots
-set listchars+=trail:.            
+" SEARCHING
+set hlsearch                                                " highlight matches
+set incsearch                                               " search as characters are entered
+set ignorecase                                              " ignore case when searching
+set smartcase                                               " case-sensitive if capital letters are included
 
-"
-"	searchin' n' shit
-"
-set hlsearch				              " highlight matches
-set ignorecase
-set smartcase				              " case-sensitive if capital letters are included
-
-"
-" brackets and quotes
-"
+" BRACKETS, QUOTES, MATCHED CHARACTERS
+" TODO is there a plugin that does a better job of this for me?
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
@@ -91,50 +81,36 @@ inoremap <<CR>  <<CR>><Esc>O
 inoremap <<     <
 inoremap <>     <>
 
-imap <C-j> <Esc>:exec <Esc>wa
-imap <C-l> <Esc>:exec <Esc>A
-
-" mapping control-space to auto-complete for now at least.
-" this actually seems awesome, because using control-space
-" doesn't break snipmate navigation to different fields
-inoremap <C-space> <C-x><C-o>
-
-"
-" buffer navigation
-"
+" BUFFER NAVIGATION
 noremap <silent> [b :bprevious <CR>
 noremap <silent> ]b :bnext <CR>
 
-"
-" commands
-"
-:command Snowman :normal i<C-v>u2603
-:command Backtick :normal i`
-":command Tableflip :normal i(╯°□°)╯︵ ┻━┻
-":command Tableback :normal i┬┬ ノ( ゜-゜ノ)
-:command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
-:command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
-
-" reverse some text
-vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
-
-""""""""""" Plugin-related Settings
 " ctrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" disable syntastic html for now becuase it's annoying
+" SYNTASTIC
 let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
 
-" nerdtree
-"map <leader>n :execute 'NERDTreeToggle'<CR>
+" MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
 nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
+vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>              " reverse some text
+imap <C-j> <Esc>:exec <Esc>wa                                               " jump to the next section when editing in insert mode
+imap <C-l> <Esc>:exec <Esc>A                                                " jump to the end of the line when editing in insert mode
+nnoremap <leader>a :Ag                                                      " open ag.vim
 
-" racer (rust)
+" COMMANDS
+:command Snowman :normal i<C-v>u2603
+:command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
+:command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
+
+" LANGUAGE SPECIFIC FEATURES AND COMMANDS
+"
+" RACER (RUST)
 set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you need to save the current buffer every time you do a goto-definition"
 let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
 "let g:racer_experimental_completer = 1
 let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
 
-"""""""""""
+" props to http://dougblack.io/words/a-good-vimrc.html for some great tips here
