@@ -95,10 +95,18 @@ let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
 nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
-vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>              " reverse some text
-imap <C-j> <Esc>:exec <Esc>wa                                               " jump to the next section when editing in insert mode
-imap <C-l> <Esc>:exec <Esc>A                                                " jump to the end of the line when editing in insert mode
-nnoremap <leader>a :Ag                                                      " open ag.vim
+
+" reverse some text
+vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
+
+" jump to the next section when editing in insert mode
+imap <C-j> <Esc>:exec <Esc>wa
+
+" jump to the end of the line when editing in insert mode
+imap <C-l> <Esc>:exec <Esc>A
+
+" open ag.vim
+nnoremap <leader>a :Ag
 
 " COMMANDS
 :command Snowman :normal i<C-v>u2603
