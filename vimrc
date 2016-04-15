@@ -110,7 +110,7 @@ imap <C-j> <Esc>:exec <Esc>wa
 imap <C-l> <Esc>:exec <Esc>A
 
 " open ag.vim
-nnoremap <leader>a :Ag  
+nnoremap <leader>a :Ag 
 
 " COMMANDS
 :command Snowman :normal i<C-v>u2603
