@@ -30,7 +30,7 @@ set showmatch                                               " highlight matching
 " SPACES AND TABS
 set nowrap                                                  " don't wrap lines
 set tabstop=4                                               " tab = 4 spaces
-set shiftwidth=4 
+set shiftwidth=4
 set expandtab                                               " use spaces, not tabs
 set backspace=indent,eol,start                              " backspace through everything in insert mode
 
@@ -93,8 +93,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " SYNTASTIC
-let g:syntastic_mode_map={ 'mode' : 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
-let g:syntastic_javascript_checkers = ['jsxhint', 'esnext']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
@@ -124,5 +123,10 @@ set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you n
 let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
 "let g:racer_experimental_completer = 1
 let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
+
+" DIRECTORY-SPECIFIC VIMRC OVERRIDE
+if filereadable(".vimrc.local")
+  so .vimrc.local
+endif
 
 " props to http://dougblack.io/words/a-good-vimrc.html for some great tips here
