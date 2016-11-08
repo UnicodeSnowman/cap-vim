@@ -20,7 +20,7 @@ set tags=./tags,tags
 
 " FONT, TEXT, COLORS
 set guifont=Source\ Code\ Pro\ Light:h14
-colorscheme hybrid                                          " color and syntax highlighting
+colorscheme nova                                            " color and syntax highlighting
 " set highlight LineNr guifg=#050505                        " highlight line numbers
 
 " HIGHLIGHTING
@@ -29,8 +29,8 @@ set showmatch                                               " highlight matching
 
 " SPACES AND TABS
 set nowrap                                                  " don't wrap lines
-set tabstop=4                                               " tab = 4 spaces
-set shiftwidth=4
+set tabstop=2                                               " tab = 2 spaces
+set shiftwidth=2
 set expandtab                                               " use spaces, not tabs
 set backspace=indent,eol,start                              " backspace through everything in insert mode
 
