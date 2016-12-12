@@ -51,36 +51,6 @@ set incsearch                                               " search as characte
 set ignorecase                                              " ignore case when searching
 set smartcase                                               " case-sensitive if capital letters are included
 
-" BRACKETS, QUOTES, MATCHED CHARACTERS
-" TODO is there a plugin that does a better job of this for me?
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
-inoremap (      ()<Left>
-inoremap (<CR>  (<CR>)<Esc>O
-inoremap ((     (
-inoremap ()     ()
-
-inoremap [      []<Left>
-inoremap [<CR>  [<CR>]<Esc>O
-inoremap [[     [
-inoremap []     []
-
-inoremap "      ""<Left>
-inoremap "<CR>  "<CR>"<Esc>O
-inoremap ""     "
-
-inoremap '      ''<Left>
-inoremap '<CR>  '<CR>'<Esc>O
-inoremap ''     '
-
-inoremap <      <><Left>
-inoremap <<CR>  <<CR>><Esc>O
-inoremap <<     <
-inoremap <>     <>
-
 " BUFFER NAVIGATION
 noremap <silent> [b :bprevious <CR>
 noremap <silent> ]b :bnext <CR>
