@@ -13,7 +13,8 @@ filetype plugin indent on                                   " load filetype spec
 set lazyredraw                                              " redraw only when necessary
 autocmd BufNewFile,BufRead *.json set ft=javascript         " highlight json as javascript
 set clipboard=unnamed                                       " clipboard : https://coderwall.com/p/j9wnfw/vim-tmux-system-clipboard
-set number                                                  " show line numbers 
+set number                                                  " show line numbers
+runtime! macros/matchit.vim                                 " enable better delimiter matching
 
 " CTAGS
 set tags=./tags,tags
@@ -93,7 +94,6 @@ set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you n
 let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
 "let g:racer_experimental_completer = 1
 let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
-
 " DIRECTORY-SPECIFIC VIMRC OVERRIDE
 if filereadable(".vimrc.local")
   so .vimrc.local
