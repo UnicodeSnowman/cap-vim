@@ -1,2 +1,2 @@
-ln -s $(dirname $0)/vimrc ~/.vimrc
-ln -s $(dirname $0)/gvimrc ~/.gvimrc
+ln -sf $(dirname $0)/vimrc ~/.vimrc
+ln -sf $(dirname $0)/gvimrc ~/.gvimrc
