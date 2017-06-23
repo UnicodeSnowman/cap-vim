@@ -1,7 +1,39 @@
 " capVim - .vimrc
 
 " PLUGIN LOADING
-call pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'cohama/lexima.vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'garbas/vim-snipmate'
+Plug 'guns/vim-clojure-static'
+Plug 'kien/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'moll/vim-node'
+Plug 'mxw/vim-jsx'
+Plug 'nono/vim-handlebars'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'trevordmiller/nova-vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/indenthtml.vim'
+Plug 'w0ng/vim-hybrid'
+
+call plug#end()
 
 " MOUSE SETTINGS
 set mouse=a
@@ -89,11 +121,7 @@ nnoremap <leader>a :Ag
 
 " LANGUAGE SPECIFIC FEATURES AND COMMANDS
 "
-" RACER (RUST)
-set hidden "Also it's worth turning on 'hidden' mode for buffers otherwise you need to save the current buffer every time you do a goto-definition"
-let g:racer_cmd="/Users/christopher/.vim/bundle/rust-racer.vim/target/release/racer"
-"let g:racer_experimental_completer = 1
-let $RUST_SRC_PATH="/Users/christopher/Development/rust/src/rustc-nightly/src/"
+
 " DIRECTORY-SPECIFIC VIMRC OVERRIDE
 if filereadable(".vimrc.local")
   so .vimrc.local
