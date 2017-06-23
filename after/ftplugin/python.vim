@@ -1,3 +1,3 @@
-
-setlocal shiftwidth=2
-setlocal tabstop=2
+" WHITESPACE
+set list                                                    " display whitespace characters
+set listchars=tab:>~,nbsp:_,trail:.                         " set whitespace character representation

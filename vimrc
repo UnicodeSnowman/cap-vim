@@ -67,10 +67,6 @@ set shiftwidth=2
 set expandtab                                               " use spaces, not tabs
 set backspace=indent,eol,start                              " backspace through everything in insert mode
 
-" WHITESPACE
-set list                                                    " display whitespace characters
-set listchars=tab:>~,nbsp:_,trail:.                         " set whitespace character representation
-
 " FOLDING
 set foldcolumn=1                                            " the number of columns to use for folding display at the left
 
