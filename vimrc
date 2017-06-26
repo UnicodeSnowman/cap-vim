@@ -112,9 +112,9 @@ imap <C-l> <Esc>:exec <Esc>A
 nnoremap <leader>a :Ag 
 
 " COMMANDS
-:command Snowman :normal i<C-v>u2603
-:command Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
-:command Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
+:command! Snowman :normal i<C-v>u2603
+:command! Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
+:command! Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
 
 " LANGUAGE SPECIFIC FEATURES AND COMMANDS
 "
