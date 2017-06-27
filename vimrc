@@ -53,7 +53,6 @@ runtime! macros/matchit.vim                                 " enable better deli
 set tags=./tags,tags
 
 " FONT, TEXT, COLORS
-set guifont=Source\ Code\ Pro\ Light:h14
 colorscheme nova                                            " color and syntax highlighting
 " set highlight LineNr guifg=#050505                        " highlight line numbers
 
@@ -86,7 +85,7 @@ noremap <silent> [b :bprevious <CR>
 noremap <silent> ]b :bnext <CR>
 
 " ctrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/plugged/ctrlp.vim
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
@@ -97,7 +96,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
-nmap <leader>T :echo "you're editing" bufname("%") "how 'bout dat?"<CR>
 
 " reverse some text
 vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
