@@ -47,6 +47,10 @@ set clipboard=unnamed                                       " clipboard : https:
 set number                                                  " show line numbers
 runtime! macros/matchit.vim                                 " enable better delimiter matching
 
+" SHOW WHITESPACE CHARACTERS
+autocmd BufNewFile,BufRead *.html,*.py,*.rb,*.js :set list
+autocmd BufNewFile,BufRead *.html,*.py,*.rb,*.js :set listchars=tab:>~,nbsp:_,trail:.
+
 " CTAGS
 set tags=./tags,tags
 
@@ -111,6 +115,7 @@ nnoremap <leader>a :Ag
 :command! Snowman :normal i<C-v>u2603
 :command! Tableflip :!echo "(╯°□°)╯︵ ┻━┻" | pbcopy
 :command! Tableback :!echo "┬┬ ノ( ゜-゜ノ)" | pbcopy
+:command! Vimrc :e ~/.vimrc
 
 " LANGUAGE SPECIFIC FEATURES AND COMMANDS
 "
