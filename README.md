@@ -1,10 +1,20 @@
-Installation:
+# Cap-Vim
 
-    git clone git://github.com/UnicodeSnowman/cap-vim.git ~/.vim
+## Installation:
 
-Create symlinks:
+### Clone
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+git clone git://github.com/UnicodeSnowman/cap-vim.git ~/.vim
 
-Open vim and run `:PlugInstall` to install plugins via [vim-plug](https://github.com/junegunn/vim-plug)
+### Create symlinks:
+
+```
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+```
+
+Then open vim and run `:PlugInstall` to install plugins via [vim-plug](https://github.com/junegunn/vim-plug)
+
+## TODO
+
+Set up symlinks for Neovim
