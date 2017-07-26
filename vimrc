@@ -62,6 +62,8 @@ colorscheme nova                                            " color and syntax h
 set cursorline                                              " highlight current line
 set showmatch                                               " highlight matching opening/closing characters
 
+let g:jsx_ext_required = 0                                  " highlight js as jsx
+
 " SPACES AND TABS
 set nowrap                                                  " don't wrap lines
 set tabstop=2                                               " tab = 2 spaces
