@@ -14,7 +14,3 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
 Then open vim and run `:PlugInstall` to install plugins via [vim-plug](https://github.com/junegunn/vim-plug)
-
-## TODO
-
-Set up symlinks for Neovim
