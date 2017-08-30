@@ -1,10 +1,12 @@
 ### javascript 
+snippet import
+	import ${2} from "${1}";
 snippet f
 	function(${1}) {
 		${2}
 	}
 snippet fa
-	(${1}) => ${2}
+	${1} => ${2}
 snippet func
 	function ${1}(${2}) {
 		${3}
@@ -21,61 +23,16 @@ snippet ife
 		${3: /* do something else */}
 	}
 
-### jasmine
 snippet describe
 	describe("${1: /* something */}", () => {
 		${2: /* ??? */}
 	});
 
 snippet it
-	it("should ${1: /* does things /*}", () => {
+	it("${1: /* does things /*}", () => {
 		${2: /* ??? */}
 	});
-snippet nginject
-	inject (function($injector) {
-		${1} = $injector.get('${2}');
-	});
-snippet ngspec:controller
-	describe('${1}', function () {
-		var $scope,
-			$rootScope,
-			$controller,
-			controller;
-
-		beforeEach(function () {
-			module(${2});
-			
-			inject(function (_$rootScope_, _$controller_, $injector) {
-				$rootScope = _$rootScope_;
-				$scope = $rootScope.$new();
-				$controller = _$controller_;
-			});
-
-			controller = $controller('${3}', { $scope: $scope });
-		});
-
-		${4}
-	});
-snippet ngspec:service
-	describe('${1}', function () {
-		var $rootScope,
-			$injector,
-			service;
-
-		beforeEach(function () {
-			module(${2});
-			
-			inject(function (_$rootScope_, _$injector_) {
-				$rootScope = _$rootScope_;
-				$injector = _$injector_;
-			});
-
-			service = $injector.get('${3}')
-		});
-
-		${4}
-	});
 snippet beforeEach
-	beforeEach(function(${1}) {
+	beforeEach(${1} => {
 		${2}
 	});
