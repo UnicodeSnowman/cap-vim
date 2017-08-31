@@ -14,3 +14,6 @@ let g:go_highlight_types = 1
 
 " enable code folding
 let g:go_fmt_experimental = 1
+
+" fold all code in buffer based on indent
+nmap <Leader>f :setlocal foldmethod=indent<CR>
