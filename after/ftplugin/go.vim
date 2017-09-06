@@ -17,3 +17,7 @@ let g:go_fmt_experimental = 1
 
 " fold all code in buffer based on indent
 nmap <Leader>f :setlocal foldmethod=indent<CR>
+
+" Focus parent Convey block. Can be repeated with `@@`
+:command! FocusConvey :execute "normal! [{^/\.Convey/\<cr>aFocus\<esc>:nohl\<cr>"
+
