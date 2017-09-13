@@ -3,7 +3,10 @@ snippet prn
 snippet prnf
 	fmt.Printf("%#v\n", ${1})
 snippet func
-	func ${1}(${2}) ${3} {
+	func ${1}(${2}) ${3}{
 		${4}
 	}
-
+snippet meth
+	func (${1}) ${2}(${3}) ${4}{
+		${5}
+	}
