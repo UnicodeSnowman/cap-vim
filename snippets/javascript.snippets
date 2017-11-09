@@ -1,6 +1,6 @@
 ### javascript 
 snippet import
-	import ${2} from "${1}";
+	import ${2} from '${1}';
 snippet f
 	function(${1}) {
 		${2}
@@ -24,12 +24,12 @@ snippet ife
 	}
 
 snippet describe
-	describe("${1: /* something */}", () => {
+	describe('${1: /* something */}', () => {
 		${2: /* ??? */}
 	});
 
 snippet it
-	it("${1: /* does things /*}", () => {
+	it('${1: /* does things /*}', () => {
 		${2: /* ??? */}
 	});
 snippet beforeEach
