@@ -99,6 +99,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " SYNTASTIC
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
