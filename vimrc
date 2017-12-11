@@ -8,6 +8,7 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'flowtype/vim-flow'
 Plug 'garbas/vim-snipmate'
 Plug 'guns/vim-clojure-static'
 Plug 'kien/ctrlp.vim'
