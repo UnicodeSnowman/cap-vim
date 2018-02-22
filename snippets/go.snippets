@@ -14,3 +14,7 @@ snippet if
 	if ${1} {
 		${2}
 	}
+snippet errif
+	if err != nil {
+		return ${1}err
+	}
