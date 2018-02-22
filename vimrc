@@ -34,6 +34,7 @@ Plug 'trevordmiller/nova-vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/indenthtml.vim'
 Plug 'w0ng/vim-hybrid'
+Plug 'wlangstroth/vim-racket'
 
 call plug#end()
 
