@@ -103,6 +103,9 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " ALE
 let b:ale_fixers = ['prettier', 'eslint']
 
+" slime
+let g:slime_target="tmux"
+
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
 
