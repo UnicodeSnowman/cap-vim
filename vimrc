@@ -11,6 +11,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'flowtype/vim-flow'
 Plug 'garbas/vim-snipmate'
 Plug 'guns/vim-clojure-static'
+Plug 'jpalardy/vim-slime'
 Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'moll/vim-node'
