@@ -22,7 +22,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'racer-rust/vim-racer'
 Plug 'rking/ag.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'scrooloose/syntastic'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
@@ -35,6 +34,7 @@ Plug 'trevordmiller/nova-vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/indenthtml.vim'
 Plug 'w0ng/vim-hybrid'
+Plug 'w0rp/ale'
 Plug 'wlangstroth/vim-racket'
 
 call plug#end()
@@ -100,9 +100,8 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
-" SYNTASTIC
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+" ALE
+let b:ale_fixers = ['prettier', 'eslint']
 
 " MAPPINGS
 map <leader>e :Explore<CR>:set number<CR>
